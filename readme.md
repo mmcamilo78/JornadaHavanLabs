@@ -4,14 +4,14 @@
 #### Informação do Participante 
 ```
 Candidato > Márcio Moreira Camilo
-Telefone  > (47)98867-7130
-E-mail    > mmcamilo@gmail.com
-Data      > 19/05/2021
+   E-mail > mmcamilo@gmail.com
+ Telefone > (47)98867-7130
+     Data > 21/05/2021
 ```
-
-![Ferramenta de Desenvolvimento: RadStudio Delphi Versão 10.3](https://github.com/twbs/icons/blob/main/icons/check.svg) 
-![SGDB: Firebird-2.5.8.27089_0_Win32](https://github.com/twbs/icons/blob/main/icons/check.svg)
-![Nome do Banco de Dados: CASACAMBIO](https://github.com/twbs/icons/blob/main/icons/check.svg) 
+#### Recursos
+    Ferramenta de Desenvolvimento------> RadStudio Delphi Versão 10.3 
+    Sistema Gerenciador Banco de Dados-> Firebird-2.5.8.27089_0_Win32
+    Nome do Banco de Dados-------------> CASACAMBIO 
 
 ### Estrutura de Pastas
 ```
@@ -27,10 +27,12 @@ Data      > 19/05/2021
 
 ### Configurações
 - Instalar o SGBD caso ainda não exista no computador destino, instalação padrão sem seleções específicas. Basicamente, Next,Next..Fim
+
 - Se a estrutura permanecer a mesma acima, o programa pode ser compilado/executado, caso contrário, existe um arquivo `conexao.ini` na pasta `\CasaCambio` onde poderá ser feito o redirecionamento do IP/Destino do arquivo `DADOS.FDB` para o novo local onde se encontra.
 
 ### Programa
-- Com base no escopo proposto, como tela principal onde fiz a divisão em quatro partes sendo: `Moedas de Câmbio | Cotação de Moedas | Calculadora | Operações de Câmbio`
+Com base no escopo proposto, como tela principal onde fiz a divisão em quatro partes sendo: 
+`Moedas de Câmbio | Cotação de Moedas | Calculadora | Operações de Câmbio`
 
 ### Moedas de Câmbio
 - Cadastro simples de Moedas de Câmbio, com CRUD básico
@@ -61,8 +63,10 @@ Data      > 19/05/2021
 - Conforme informado no case o ***O Problema***, considerei nas operações a `Taxa 10%` sobre o valor convertido que a empresa cobraria pela operação.
  
 ### Relatórios
- [ ] Todos os Registros 
- [ ] Incluir Filtro de Pesquisa
+
+[ ] Todos os Registros
+
+[ ] Incluir Filtro de Pesquisa
 
 Atendendo a solicitação do escopo onde os `relatórios poderão ser filtrados por intervalo de tempo e cliente`.
 
