@@ -1,4 +1,4 @@
-## Desafio Programação Jornada Labs HAVAN-Proway
+### Desafio Programação Jornada Labs HAVAN-Proway
 ---
 
 #### Informação do Participante 
@@ -9,11 +9,11 @@ E-mail    > mmcamilo@gmail.com
 Data      > 19/05/2021
 ```
 
-> Ferramenta de Desenvolvimento: RadStudio Delphi Versão 10.3
-> SGDB: Firebird-2.5.8.27089_0_Win32
+> Ferramenta de Desenvolvimento: RadStudio Delphi Versão 10.3;
+> SGDB: Firebird-2.5.8.27089_0_Win32;
 > Nome do Banco de Dados: CASACAMBIO 
 
-### [Estrutura de Pastas]
+### Estrutura de Pastas
 ```
 \CasaCambio   <- Pasta Default do projeto CasaCambio - Muito Dinheiro e do arquivo .exe do programa 
 \Arquivos     <- Pasta de retorno dos arquivos .CSV do Banco Central do Brasil com as cotações das moedas 
@@ -25,18 +25,18 @@ Data      > 19/05/2021
 \Utils        <- Pasta com o instalador do SGBD Firebird, caso ainda não o tenha instalado no computador destino
 ```
 
-### [Configurações]
+### Configurações
 - Instalar o SGBD caso ainda não exista no computador destino, instalação padrão sem seleções específicas. Basicamente, Next,Next..Fim
 - Se a estrutura permanecer a mesma acima, o programa pode ser compilado/executado, caso contrário, existe um arquivo `conexao.ini` na pasta `\CasaCambio` onde poderá ser feito o redirecionamento do IP/Destino do arquivo `DADOS.FDB` para o novo local onde se encontra.
 
-### [Programa]
+### Programa
 - Com base no escopo proposto, como tela principal onde fiz a divisão em quatro partes sendo: `Moedas de Câmbio | Cotação de Moedas | Calculadora | Operações de Câmbio`
 
-### [Moedas de Câmbio]
+### Moedas de Câmbio
 - Cadastro simples de Moedas de Câmbio, com CRUD básico
   * **Importante** Cadastrar as moedas com os código pré-estabelecido pelo Banco Central do Brasil, já que existe a possibilidade de usar um recurso extra não solicitado no escopo mas que fará uma grande diferença para o usuário. Obter os valores da cotação das moedas no repositório do BCB de acordo com a data de cotação selecionada pelo mesmo.
 
-### [Cotação de Moedas]
+### Cotação de Moedas
 - Local onde o usuário poderá definir quais as moedas serão cotadas para em seguida, utilizar a `Calculadora de Câmbio` ou as `Operações de Câmbio`.
 - Os valores referentes as Taxas e Paridades das moedas poderão ser informados manualmente pelo usuário ou então utilizar o recurso de `Importar Cotações do Banco Central do Brasil`, onde ao executar o recurso, o programa irá buscar as cotações das moedas pré-selecionadas e atualizará os valores correspondentes, de acordo com o fechamento da cotação na data selecionada pelo usuário. 
  
@@ -45,7 +45,7 @@ Data      > 19/05/2021
 - A rotina de importação dos valores, também possui o recurso de importar um arquivo existente no computador desde que esse arquivo esteja de acordo com o Layout do BCB.
 - Outro recurso dentro da rotina de importação é retornar a cotação de Todas as moedas disponiveis no Repositório do BCB, dessa forma não é necessário realizar a pré-inclusão das moedas na tela de Cotação.
 
-### [Calculadora de Câmbio] Desafio - Parte 1
+### Calculadora de Câmbio | Desafio - Parte 1
 - Conforme solicitado, aqui o usuário informa o valor, a moeda de origem e a moeda de destino, e com base na cotação a Calculadora realiza a conversão entre as moedas.
 
 - Poderá ser realizado a conversão de todas as moedas disponíveis na tela de Cotação de Moedas, desde que os valores das Taxas e Paridades sejam maior que zero.
@@ -54,15 +54,14 @@ Data      > 19/05/2021
 
   **Importante** é necessário incluir a moeda BRL (Real do Brasil) para que seja possível a conversão de moedas para BRL e de BRL para outras moedas
 
-### [Operações de Câmbio] Desafio - Parte 2 
+### Operações de Câmbio | Desafio - Parte 2 
 - Conforme proposto no escopo do desafio, o *controle de operações deverá fazer a conversão de cada moeda para Reais (BRL)*, não ficou definido nesse caso se também haveria necessidade de converter de Reais para outras moedas, então segui o escopo conforme citado. De qualquer forma, contemplei essa conversão na Calculadora e se necessário, realizo a melhoria na tela de Operações de Câmbio também.
 
 - Também possui um CRUD básico, porém na inclusão de uma nova operação, não foi solicitado um campo tipo `chave única` do cliente, a fim de evitar duplicidade no cadastro do mesmo cliente com as variações do seu próprio nome por exemplo, então na implementação do código, ao começar a digitar o nome do cliente, um mini grid será exibido trazendo os nomes já cadastrados, e caso o nome já tenha sido informado anteriormente, o usuário poderá selecioná-lo, não é a solução ideal mas já irá ajudar na questão de variações com o mesmo nome de um mesmo cliente.
 - Conforme informado no case o ***O Problema***, considerei nas operações a `Taxa 10%` sobre o valor convertido que a empresa cobraria pela operação.
  
-### [Relatórios]
-> *Disponibilizei as opções*
->  [ ] Todos os Registros 
+### Relatórios
+> [ ] Todos os Registros 
 > [ ] Incluir Filtro de Pesquisa
 
 Atendendo a solicitação do escopo onde os `relatórios poderão ser filtrados por intervalo de tempo e cliente`.
@@ -71,12 +70,12 @@ Atendendo a solicitação do escopo onde os `relatórios poderão ser filtrados 
     ( ) Valor Total das Operações
     ( ) Valor Total das Taxas Cobradas
  
-### [Banco de Dados]
+### Banco de Dados
 
 Para este desafio utilizei o banco de dados Firebird por considerar Portátil, Free e Confiável para o escopo proposto.
 
 ~~~SQL
-[CASACAMBIO]
+/*CASACAMBIO*/
 SET SQL DIALECT 3;
 SET NAMES WIN1252;
 SET CLIENTLIB 'C:\Softwares\CasaCambio\Source\fbclient.dll';
@@ -86,10 +85,12 @@ PAGE_SIZE 16384
 DEFAULT CHARACTER SET WIN1252 COLLATION WIN1252;
 ~~~
 
-### [Tabelas]
-- MOEDAS
-- COTACOES
-- OPERACOES
+### Tabelas
+> MOEDAS
+> COTACOES
+> OPERACOES
+
+### Script
 
 ~~~SQL
 [MOEDAS]
