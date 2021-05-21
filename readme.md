@@ -9,9 +9,9 @@ E-mail    > mmcamilo@gmail.com
 Data      > 19/05/2021
 ```
 
-> Ferramenta de Desenvolvimento: RadStudio Delphi Versão 10.3;
-> SGDB: Firebird-2.5.8.27089_0_Win32;
-> Nome do Banco de Dados: CASACAMBIO 
+![Ferramenta de Desenvolvimento: RadStudio Delphi Versão 10.3](https://github.com/twbs/icons/blob/main/icons/check.svg) 
+![SGDB: Firebird-2.5.8.27089_0_Win32](https://github.com/twbs/icons/blob/main/icons/check.svg)
+![Nome do Banco de Dados: CASACAMBIO](https://github.com/twbs/icons/blob/main/icons/check.svg) 
 
 ### Estrutura de Pastas
 ```
@@ -61,8 +61,8 @@ Data      > 19/05/2021
 - Conforme informado no case o ***O Problema***, considerei nas operações a `Taxa 10%` sobre o valor convertido que a empresa cobraria pela operação.
  
 ### Relatórios
-> [ ] Todos os Registros 
-> [ ] Incluir Filtro de Pesquisa
+ [ ] Todos os Registros 
+ [ ] Incluir Filtro de Pesquisa
 
 Atendendo a solicitação do escopo onde os `relatórios poderão ser filtrados por intervalo de tempo e cliente`.
 
@@ -93,7 +93,7 @@ DEFAULT CHARACTER SET WIN1252 COLLATION WIN1252;
 ### Script
 
 ~~~SQL
-[MOEDAS]
+/*MOEDAS*/
 CREATE GENERATOR GEN_MOEDAS_ID;
 CREATE TABLE MOEDAS (
     ID        INTEGER NOT NULL,
@@ -109,7 +109,7 @@ ALTER TABLE MOEDAS ADD CONSTRAINT UNQ1_MOEDAS UNIQUE (CODIGO);
 ALTER TABLE MOEDAS ADD CONSTRAINT PK_MOEDAS PRIMARY KEY (ID);
 ~~~
 ~~~SQL
-[COTACOES] 
+/*COTACOES*/ 
 CREATE GENERATOR GEN_COTACOES_ID;
 CREATE TABLE COTACOES (
     ID               INTEGER NOT NULL,
@@ -125,7 +125,7 @@ ALTER TABLE COTACOES ADD CONSTRAINT PK_COTACOES PRIMARY KEY (ID);
 ALTER TABLE COTACOES ADD CONSTRAINT FK_COTACOES_1 FOREIGN KEY (CODIGO) REFERENCES MOEDAS (CODIGO);
 ~~~
 ~~~SQL
-[OPERACOES]
+/*OPERACOES*/
 CREATE GENERATOR GEN_OPERACOES_ID;
 CREATE TABLE OPERACOES (
     ID                    INTEGER NOT NULL,
