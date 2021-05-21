@@ -31,9 +31,14 @@ Candidato > Márcio Moreira Camilo
 - Se a estrutura permanecer a mesma acima, o programa pode ser compilado/executado, caso contrário, existe um arquivo `conexao.ini` na pasta `\CasaCambio` onde poderá ser feito o redirecionamento do IP/Destino do arquivo `DADOS.FDB` para o novo local onde se encontra.
 
 ### Programa
-Com base no escopo proposto, como tela principal onde fiz a divisão em quatro partes sendo:
+Com base no escopo proposto, como tela principal onde fiz a divisão em seis partes sendo:
 
-`Moedas de Câmbio | Cotação de Moedas | Calculadora | Operações de Câmbio`
+`Lojas de Câmbio | Moedas de Câmbio | Cotação de Moedas | Calculadora | Operações de Câmbio | Relatórios`
+
+### Lojas de Câmbio
+- Observando atentamente toda a descrição contida no case ***O Problema***, numa determinada parte diz: "...utiliza uma planilha para converter e registrar os saldos em caixa `de cada loja`"... e quando li a descrição considerando os seguintes critérios fictícios para desenvolver sistema Gerenciador de Operações, na parte que diz: "O cadastro deverá conter os seguintes dados", e então foi nesse ponto que fiquei numa dúvida muito desconfortável, :) :)  Não existia nos dados informados o campo Loja, e sinceramente não conseguia parar de pensar sobre o que fazer; *Inserir o campo Loja* e correr o risco, ou *não inserir o campo Loja* e ficar fora do contexto do problema. Analisando a ideia novamente e pensando muito numa solução ideal para **resolver o Problema do cliente**, decidi assumir o risco e incluir o campo Loja além de relacioná-lo e exibí-lo na tabela de Operações de Câmbio como também nos relatórios. Espero que nesse momento, seja considerado uma outra parte do Desafio que diz: ***"Quem sabe você nos surprienda!"***
+
+- Cadastro simples das Lojas de Câmbio com CRUD básico, apenas para relacionar as operações com uma loja.
 
 ### Moedas de Câmbio
 - Cadastro simples de Moedas de Câmbio, com CRUD básico
@@ -74,6 +79,8 @@ Conforme o escopo os ***Relatórios poderão ser filtrados por intervalo de temp
     ( ) Listagem de Operações
     ( ) Valor Total das Operações
     ( ) Valor Total das Taxas Cobradas
+    ---
+    ( ) Listagem de Operações por Loja (Recurso Adicional)
  
 ### Banco de Dados
 
@@ -91,11 +98,22 @@ DEFAULT CHARACTER SET WIN1252 COLLATION WIN1252;
 ~~~
 
 ### Tabelas
-> MOEDAS
-> COTACOES
-> OPERACOES
+> LOJAS | MOEDAS | COTACOES | OPERACOES
 
 ### Script
+
+~~~SQL
+/*LOJAS*/
+CREATE GENERATOR GEN_LOJAS_ID;
+CREATE TABLE LOJAS (
+    ID      INTEGER NOT NULL,
+    NOME    VARCHAR(40),
+    CIDADE  VARCHAR(40),
+    UF      CHAR(2)
+);
+
+ALTER TABLE LOJAS ADD CONSTRAINT PK_LOJAS PRIMARY KEY (ID);
+~~~
 
 ~~~SQL
 /*MOEDAS*/
@@ -113,6 +131,7 @@ CREATE TABLE MOEDAS (
 ALTER TABLE MOEDAS ADD CONSTRAINT UNQ1_MOEDAS UNIQUE (CODIGO);
 ALTER TABLE MOEDAS ADD CONSTRAINT PK_MOEDAS PRIMARY KEY (ID);
 ~~~
+
 ~~~SQL
 /*COTACOES*/ 
 CREATE GENERATOR GEN_COTACOES_ID;
@@ -129,11 +148,13 @@ CREATE TABLE COTACOES (
 ALTER TABLE COTACOES ADD CONSTRAINT PK_COTACOES PRIMARY KEY (ID);
 ALTER TABLE COTACOES ADD CONSTRAINT FK_COTACOES_1 FOREIGN KEY (CODIGO) REFERENCES MOEDAS (CODIGO);
 ~~~
+
 ~~~SQL
 /*OPERACOES*/
 CREATE GENERATOR GEN_OPERACOES_ID;
 CREATE TABLE OPERACOES (
     ID                    INTEGER NOT NULL,
+    ID_LOJA               INTEGER NOT NULL,
     NOME_CLIENTE          VARCHAR(60),
     MOEDA_ORIGEM          VARCHAR(3),
     MOEDA_DESTINO         VARCHAR(3),
@@ -148,4 +169,5 @@ CREATE TABLE OPERACOES (
 );
 
 ALTER TABLE OPERACOES ADD CONSTRAINT PK_OPERACOES PRIMARY KEY (ID);
+ALTER TABLE OPERACOES ADD CONSTRAINT FK_OPERACOES_1 FOREIGN KEY (ID_LOJA) REFERENCES LOJAS (ID);
 ~~~
