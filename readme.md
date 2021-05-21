@@ -26,12 +26,13 @@ Candidato > Márcio Moreira Camilo
 ```
 
 ### Configurações
-- Instalar o SGBD caso ainda não exista no computador destino, instalação padrão sem seleções específicas. Basicamente, Next,Next..Fim
+- Instalar o SGBD caso ainda não exista no computador destino, instalação padrão sem seleções específicas. Basicamente Next, Next, Fim.
 
 - Se a estrutura permanecer a mesma acima, o programa pode ser compilado/executado, caso contrário, existe um arquivo `conexao.ini` na pasta `\CasaCambio` onde poderá ser feito o redirecionamento do IP/Destino do arquivo `DADOS.FDB` para o novo local onde se encontra.
 
 ### Programa
-Com base no escopo proposto, como tela principal onde fiz a divisão em quatro partes sendo: 
+Com base no escopo proposto, como tela principal onde fiz a divisão em quatro partes sendo:
+
 `Moedas de Câmbio | Cotação de Moedas | Calculadora | Operações de Câmbio`
 
 ### Moedas de Câmbio
@@ -64,11 +65,11 @@ Com base no escopo proposto, como tela principal onde fiz a divisão em quatro p
  
 ### Relatórios
 
-[ ] Todos os Registros
-
-[ ] Incluir Filtro de Pesquisa
-
-Atendendo a solicitação do escopo onde os `relatórios poderão ser filtrados por intervalo de tempo e cliente`.
+Conforme o escopo os ***Relatórios poderão ser filtrados por intervalo de tempo e cliente***.
+```
+( ) Todos os Registros
+( ) Filtro de Pesquisa
+```
 
     ( ) Listagem de Operações
     ( ) Valor Total das Operações
