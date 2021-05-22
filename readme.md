@@ -12,7 +12,7 @@ Candidato > Márcio Moreira Camilo
     Ferramenta de Desenvolvimento------> RadStudio Delphi Versão 10.3 
     Sistema Gerenciador Banco de Dados-> Firebird-2.5.8.27089_0_Win32
     Nome do Banco de Dados-------------> CASACAMBIO 
-
+    
 ### Estrutura de Pastas
 ```
 \CasaCambio   <- Pasta Default do projeto CasaCambio - Muito Dinheiro e do arquivo .exe do programa 
@@ -70,17 +70,17 @@ Com base no escopo proposto, como tela principal onde fiz a divisão em seis par
  
 ### Relatórios
 
-Conforme o escopo os ***Relatórios poderão ser filtrados por intervalo de tempo e cliente***.
-```
-( ) Todos os Registros
-( ) Filtro de Pesquisa
-```
+Conforme o escopo os ***Relatórios poderão ser filtrados por intervalo de tempo e cliente***  
+:radio_button: Todos os Registros  
+:radio_button: Filtro de Pesquisa  
 
-    ( ) Listagem de Operações
-    ( ) Valor Total das Operações
-    ( ) Valor Total das Taxas Cobradas
-    ---
-    ( ) Listagem de Operações por Loja (Recurso Adicional)
+Opções de impressão  
+:radio_button: Listagem de Operações  
+:radio_button: Valor Total das Operações  
+:radio_button: Valor Total das Taxas Cobradas  
+
+Recurso Adicional  
+:radio_button: Listagem de Operações por Loja (Recurso Adicional)  
  
 ### Banco de Dados
 
