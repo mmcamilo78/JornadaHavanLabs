@@ -1,0 +1,28 @@
+program CasaCambio;
+
+uses
+  Vcl.Forms,
+  uPrincipal in 'uPrincipal.pas' {frmPrincipal},
+  uMoedasIncAlt in 'uMoedasIncAlt.pas' {frmMoedasIncAlt},
+  uDm in 'uDm.pas' {DM: TDataModule},
+  uImporta in 'uImporta.pas' {frmImporta},
+  uCotacaoIncAlt in 'uCotacaoIncAlt.pas' {frmCotacaoIncAlt},
+  uLocalizaMoedas in 'uLocalizaMoedas.pas' {frmLocalizaMoedas},
+  calculadora in 'calculadora.pas' {frmCalculadora},
+  uOperacoesIncAlt in 'uOperacoesIncAlt.pas' {frmOperacoesIncAlt};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmMoedasIncAlt, frmMoedasIncAlt);
+  Application.CreateForm(TDM, DM);
+  Application.CreateForm(TfrmImporta, frmImporta);
+  Application.CreateForm(TfrmCotacaoIncAlt, frmCotacaoIncAlt);
+  Application.CreateForm(TfrmLocalizaMoedas, frmLocalizaMoedas);
+  Application.CreateForm(TfrmCalculadora, frmCalculadora);
+  Application.CreateForm(TfrmOperacoesIncAlt, frmOperacoesIncAlt);
+  Application.Run;
+end.

@@ -1,0 +1,55 @@
+unit uLojasIncAlt;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmLojasIncAlt = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    edtNome: TEdit;
+    edtCidade: TEdit;
+    cbbUF: TComboBox;
+    Bevel1: TBevel;
+    btnGravar: TButton;
+    brnCancelar: TButton;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLojasIncAlt: TfrmLojasIncAlt;
+
+implementation
+
+{$R *.dfm}
+
+uses uPrincipal;
+
+procedure TfrmLojasIncAlt.FormShow(Sender: TObject);
+begin
+  if Tag = 1 then
+  begin
+    edtNome.Clear;
+    edtCidade.Clear;
+    cbbUF.ItemIndex := cbbUF.Items.IndexOf('SC');
+    edtNome.SetFocus;
+  end;
+
+  if Tag = 2 then
+  begin
+    edtNome.Text := frmPrincipal.qryLojasNOME.Text;
+    edtCidade.Text := frmPrincipal.qryLojasCIDADE.Text;
+    cbbUF.ItemIndex := cbbUF.Items.IndexOf(frmPrincipal.qryLojasUF.Text);
+    edtNome.SetFocus;
+  end;
+end;
+
+end.

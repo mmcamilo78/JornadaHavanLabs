@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/04/23 21:12:28.000.750,=C:\Users\TI\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/06/08 17:07:49.000.135,=C:\Users\TI\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/06/11 14:47:22.000.926,=C:\Users\TI\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/13 11:47:10.000.841,=C:\Users\TI\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/13 12:10:32.000.148,=C:\Users\TI\Documents\Embarcadero\Studio\Projects\FachadaWSSGS1.pas</Transaction>
+    <Transaction>2021/05/13 12:13:42.000.554,C:\Softwares\CasaCambio\Source\uPrincipal.pas=C:\Users\TI\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/13 12:13:42.000.554,C:\Softwares\CasaCambio\Source\uPrincipal.dfm=C:\Users\TI\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/05/13 12:13:50.000.290,C:\Softwares\CasaCambio\Source\FachadaWSSGS1.pas=C:\Users\TI\Documents\Embarcadero\Studio\Projects\FachadaWSSGS1.pas</Transaction>
+    <Transaction>2021/05/13 12:14:06.000.559,C:\Softwares\CasaCambio\Source\CasaCambio.dproj=C:\Users\TI\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/05/14 10:07:33.000.905,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/14 10:08:26.000.357,C:\Softwares\CasaCambio\Source\uMoedasIncAlt.pas=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/14 10:08:26.000.357,C:\Softwares\CasaCambio\Source\uMoedasIncAlt.dfm=C:\Softwares\CasaCambio\Source\Unit1.dfm</Transaction>
+    <Transaction>2021/05/14 11:14:49.000.413,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/14 11:15:10.000.133,C:\Softwares\CasaCambio\Source\uDm.dfm=C:\Softwares\CasaCambio\Source\Unit1.dfm</Transaction>
+    <Transaction>2021/05/14 11:15:10.000.133,C:\Softwares\CasaCambio\Source\uDm.pas=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/14 14:43:32.000.276,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/14 14:55:45.000.965,C:\Softwares\CasaCambio\Source\Unit1.pas=C:\Softwares\CasaCambio\Source\uImporta.pas</Transaction>
+    <Transaction>2021/05/14 14:55:45.000.965,C:\Softwares\CasaCambio\Source\Unit1.dfm=C:\Softwares\CasaCambio\Source\uImporta.dfm</Transaction>
+    <Transaction>2021/05/15 09:48:27.000.772,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/15 09:49:39.000.591,C:\Softwares\CasaCambio\Source\Unit1.pas=C:\Softwares\CasaCambio\Source\uCotacaoIncAlt.pas</Transaction>
+    <Transaction>2021/05/15 09:49:39.000.591,C:\Softwares\CasaCambio\Source\Unit1.dfm=C:\Softwares\CasaCambio\Source\uCotacaoIncAlt.dfm</Transaction>
+    <Transaction>2021/05/16 10:39:14.000.022,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/16 10:57:00.000.307,C:\Softwares\CasaCambio\Source\Unit1.dfm=C:\Softwares\CasaCambio\Source\uLocalizaMoedas.dfm</Transaction>
+    <Transaction>2021/05/16 10:57:00.000.307,C:\Softwares\CasaCambio\Source\Unit1.pas=C:\Softwares\CasaCambio\Source\uLocalizaMoedas.pas</Transaction>
+    <Transaction>2021/05/16 12:31:40.000.770,C:\Softwares\CasaCambio\Source\FachadaWSSGS1.pas=</Transaction>
+    <Transaction>2021/05/16 14:18:36.000.636,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/16 14:20:18.000.100,C:\Softwares\CasaCambio\Source\Unit1.pas=C:\Softwares\CasaCambio\Source\calculadora.pas</Transaction>
+    <Transaction>2021/05/16 14:20:18.000.100,C:\Softwares\CasaCambio\Source\Unit1.dfm=C:\Softwares\CasaCambio\Source\calculadora.dfm</Transaction>
+    <Transaction>2021/05/18 21:07:22.000.785,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/18 21:08:52.000.249,C:\Softwares\CasaCambio\Source\Unit1.pas=C:\Softwares\CasaCambio\Source\uOperacoesIncAlt.pas</Transaction>
+    <Transaction>2021/05/18 21:08:52.000.249,C:\Softwares\CasaCambio\Source\Unit1.dfm=C:\Softwares\CasaCambio\Source\uOperacoesIncAlt.dfm</Transaction>
+    <Transaction>2021/05/19 13:29:09.000.822,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/19 13:29:52.000.343,C:\Softwares\CasaCambio\Source\Unit1.pas=C:\Softwares\CasaCambio\Source\uRelatorios.pas</Transaction>
+    <Transaction>2021/05/19 13:29:52.000.343,C:\Softwares\CasaCambio\Source\Unit1.dfm=C:\Softwares\CasaCambio\Source\uRelatorios.dfm</Transaction>
+    <Transaction>2021/05/19 17:16:23.000.591,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/19 17:17:09.000.408,C:\Softwares\CasaCambio\Source\uListaOperacoes.dfm=C:\Softwares\CasaCambio\Source\Unit1.dfm</Transaction>
+    <Transaction>2021/05/19 17:17:09.000.408,C:\Softwares\CasaCambio\Source\uListaOperacoes.pas=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/19 19:45:23.000.007,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/19 19:46:28.000.919,C:\Softwares\CasaCambio\Source\uRelTaxasCobradas.dfm=C:\Softwares\CasaCambio\Source\Unit1.dfm</Transaction>
+    <Transaction>2021/05/19 19:46:28.000.919,C:\Softwares\CasaCambio\Source\uRelTaxasCobradas.pas=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/19 20:09:31.000.899,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/19 20:10:21.000.155,C:\Softwares\CasaCambio\Source\uTotalOperacoes.pas=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/19 20:10:21.000.155,C:\Softwares\CasaCambio\Source\uTotalOperacoes.dfm=C:\Softwares\CasaCambio\Source\Unit1.dfm</Transaction>
+    <Transaction>2021/05/21 10:39:54.000.012,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/21 10:41:01.000.613,C:\Softwares\CasaCambio\Source\Unit1.pas=C:\Softwares\CasaCambio\Source\uLojasIncAlt.pas</Transaction>
+    <Transaction>2021/05/21 10:41:01.000.613,C:\Softwares\CasaCambio\Source\Unit1.dfm=C:\Softwares\CasaCambio\Source\uLojasIncAlt.dfm</Transaction>
+    <Transaction>2021/05/21 14:14:59.000.353,=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+    <Transaction>2021/05/21 14:15:38.000.746,C:\Softwares\CasaCambio\Source\uOperacoesLoja.dfm=C:\Softwares\CasaCambio\Source\Unit1.dfm</Transaction>
+    <Transaction>2021/05/21 14:15:38.000.746,C:\Softwares\CasaCambio\Source\uOperacoesLoja.pas=C:\Softwares\CasaCambio\Source\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

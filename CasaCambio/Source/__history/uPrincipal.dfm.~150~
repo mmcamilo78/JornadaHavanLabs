@@ -1,0 +1,922 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Desafio Jornada Labs HAVAN - PROWAY'
+  ClientHeight = 505
+  ClientWidth = 1120
+  Color = clWindow
+  Ctl3D = False
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 1114
+    Height = 86
+    Align = alTop
+    BevelKind = bkFlat
+    BevelOuter = bvNone
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Top = 8
+      Width = 197
+      Height = 13
+      Caption = 'Projeto: Casa de C'#226'mbio - Muito Dinheiro'
+    end
+    object Label2: TLabel
+      Left = 8
+      Top = 32
+      Width = 360
+      Height = 13
+      Caption = 
+        'Candidato: M'#225'rcio Moreira Camilo | (47)98867-7130 | mmcamilo@gma' +
+        'il.com'
+    end
+    object Label3: TLabel
+      Left = 8
+      Top = 56
+      Width = 213
+      Height = 13
+      Caption = 'Desafio Programa'#231#227'o - Jornada Labs HAVAN'
+    end
+    object Button5: TButton
+      AlignWithMargins = True
+      Left = 998
+      Top = 5
+      Width = 107
+      Height = 72
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Align = alRight
+      Caption = 'Sair'
+      TabOrder = 0
+      OnClick = Button5Click
+    end
+  end
+  object Panel2: TPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 95
+    Width = 1114
+    Height = 407
+    Align = alClient
+    BevelKind = bkFlat
+    BevelOuter = bvNone
+    TabOrder = 1
+    object PageControl: TPageControl
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Width = 1104
+      Height = 397
+      ActivePage = tabCotacoes
+      Align = alClient
+      HotTrack = True
+      MultiLine = True
+      TabOrder = 0
+      OnChange = PageControlChange
+      object tabLojas: TTabSheet
+        Caption = 'Lojas de C'#226'mbio'
+        ImageIndex = 3
+        object Panel12: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 1090
+          Height = 60
+          Align = alTop
+          BevelKind = bkFlat
+          BevelOuter = bvNone
+          TabOrder = 0
+          object btnExcluirLoja: TButton
+            AlignWithMargins = True
+            Left = 203
+            Top = 3
+            Width = 94
+            Height = 50
+            Align = alLeft
+            Caption = '&Excluir'
+            TabOrder = 0
+            OnClick = btnExcluirLojaClick
+          end
+          object btnAlterarLoja: TButton
+            AlignWithMargins = True
+            Left = 103
+            Top = 3
+            Width = 94
+            Height = 50
+            Align = alLeft
+            Caption = '&Alterar'
+            TabOrder = 1
+            OnClick = btnAlterarLojaClick
+          end
+          object btnIncluirLoja: TButton
+            AlignWithMargins = True
+            Left = 3
+            Top = 3
+            Width = 94
+            Height = 50
+            Align = alLeft
+            Caption = '&Incluir'
+            TabOrder = 2
+            OnClick = btnIncluirLojaClick
+          end
+          object Panel13: TPanel
+            Left = 921
+            Top = 0
+            Width = 165
+            Height = 56
+            Align = alRight
+            BevelOuter = bvNone
+            TabOrder = 3
+          end
+          object GroupBox2: TGroupBox
+            AlignWithMargins = True
+            Left = 303
+            Top = 3
+            Width = 314
+            Height = 50
+            Align = alLeft
+            Caption = 'Localizar Loja '
+            TabOrder = 4
+            object edtLocalizarLoja: TEdit
+              Left = 16
+              Top = 20
+              Width = 281
+              Height = 19
+              CharCase = ecUpperCase
+              TabOrder = 0
+              OnChange = edtLocalizarLojaChange
+            end
+          end
+        end
+        object Panel14: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 69
+          Width = 1090
+          Height = 297
+          Align = alClient
+          BevelKind = bkFlat
+          BevelOuter = bvNone
+          TabOrder = 1
+          object DBGrid4: TDBGrid
+            AlignWithMargins = True
+            Left = 3
+            Top = 3
+            Width = 1080
+            Height = 287
+            Align = alClient
+            BorderStyle = bsNone
+            DataSource = dsLojas
+            Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'Tahoma'
+            TitleFont.Style = []
+            OnTitleClick = DBGrid2TitleClick
+          end
+        end
+      end
+      object tabMoedas: TTabSheet
+        Caption = ' Moedas de C'#226'mbio   '
+        ImageIndex = 2
+        object Panel6: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 1090
+          Height = 60
+          Align = alTop
+          BevelKind = bkFlat
+          BevelOuter = bvNone
+          TabOrder = 0
+          object Button7: TButton
+            AlignWithMargins = True
+            Left = 203
+            Top = 3
+            Width = 94
+            Height = 50
+            Align = alLeft
+            Caption = '&Excluir'
+            TabOrder = 0
+            OnClick = Button7Click
+          end
+          object Button8: TButton
+            AlignWithMargins = True
+            Left = 103
+            Top = 3
+            Width = 94
+            Height = 50
+            Align = alLeft
+            Caption = '&Alterar'
+            TabOrder = 1
+            OnClick = Button8Click
+          end
+          object Button9: TButton
+            AlignWithMargins = True
+            Left = 3
+            Top = 3
+            Width = 94
+            Height = 50
+            Align = alLeft
+            Caption = '&Incluir'
+            TabOrder = 2
+            OnClick = Button9Click
+          end
+          object Panel7: TPanel
+            Left = 921
+            Top = 0
+            Width = 165
+            Height = 56
+            Align = alRight
+            BevelOuter = bvNone
+            TabOrder = 3
+          end
+          object GroupBox1: TGroupBox
+            AlignWithMargins = True
+            Left = 303
+            Top = 3
+            Width = 314
+            Height = 50
+            Align = alLeft
+            Caption = 'Localizar Moeda '
+            TabOrder = 4
+            object edtLocalizarMoedas: TEdit
+              Left = 16
+              Top = 20
+              Width = 281
+              Height = 19
+              CharCase = ecUpperCase
+              TabOrder = 0
+              OnChange = edtLocalizarMoedasChange
+            end
+          end
+        end
+        object Panel8: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 69
+          Width = 1090
+          Height = 297
+          Align = alClient
+          BevelKind = bkFlat
+          BevelOuter = bvNone
+          TabOrder = 1
+          object DBGrid2: TDBGrid
+            AlignWithMargins = True
+            Left = 3
+            Top = 3
+            Width = 1080
+            Height = 287
+            Align = alClient
+            BorderStyle = bsNone
+            DataSource = dsMoedas
+            Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'Tahoma'
+            TitleFont.Style = []
+            OnTitleClick = DBGrid2TitleClick
+          end
+        end
+      end
+      object tabCotacoes: TTabSheet
+        Caption = ' Cota'#231#227'o de Moedas   '
+        object Panel3: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 1090
+          Height = 65
+          Align = alTop
+          BevelKind = bkFlat
+          BevelOuter = bvNone
+          TabOrder = 0
+          object btnImportarCotacaoBCB: TButton
+            AlignWithMargins = True
+            Left = 303
+            Top = 3
+            Width = 162
+            Height = 55
+            Align = alLeft
+            Caption = '&Importar Cota'#231#245'es do Banco Central do Brasil'
+            TabOrder = 0
+            WordWrap = True
+            OnClick = btnImportarCotacaoBCBClick
+          end
+          object Button2: TButton
+            AlignWithMargins = True
+            Left = 203
+            Top = 3
+            Width = 94
+            Height = 55
+            Align = alLeft
+            Caption = '&Excluir'
+            TabOrder = 1
+            OnClick = Button2Click
+          end
+          object Button3: TButton
+            AlignWithMargins = True
+            Left = 103
+            Top = 3
+            Width = 94
+            Height = 55
+            Align = alLeft
+            Caption = '&Alterar'
+            TabOrder = 2
+            OnClick = Button3Click
+          end
+          object Button4: TButton
+            AlignWithMargins = True
+            Left = 3
+            Top = 3
+            Width = 94
+            Height = 55
+            Align = alLeft
+            Caption = '&Incluir'
+            TabOrder = 3
+            OnClick = Button4Click
+          end
+          object Panel5: TPanel
+            Left = 921
+            Top = 0
+            Width = 165
+            Height = 61
+            Align = alRight
+            BevelOuter = bvNone
+            TabOrder = 4
+            object Label4: TLabel
+              Left = 29
+              Top = 13
+              Width = 76
+              Height = 13
+              Caption = 'Data Cota'#231#227'o'
+              Color = clBtnFace
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              ParentColor = False
+              ParentFont = False
+            end
+            object dtCotacao: TDateTimePicker
+              Left = 28
+              Top = 29
+              Width = 113
+              Height = 21
+              Date = 44330.000000000000000000
+              Time = 0.498285856483562400
+              TabOrder = 0
+              OnChange = dtCotacaoChange
+            end
+          end
+          object btnCalculadora: TButton
+            AlignWithMargins = True
+            Left = 471
+            Top = 3
+            Width = 154
+            Height = 55
+            Align = alLeft
+            Caption = 'Calculadora de C'#226'mbio'
+            TabOrder = 5
+            OnClick = btnCalculadoraClick
+          end
+        end
+        object Panel4: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 74
+          Width = 1090
+          Height = 292
+          Align = alClient
+          BevelKind = bkFlat
+          BevelOuter = bvNone
+          TabOrder = 1
+          object DBGrid1: TDBGrid
+            Left = 0
+            Top = 0
+            Width = 1086
+            Height = 288
+            Align = alClient
+            BorderStyle = bsNone
+            DataSource = dsCotacoes
+            Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'Tahoma'
+            TitleFont.Style = []
+            OnTitleClick = DBGrid1TitleClick
+          end
+        end
+      end
+      object tabOperacoes: TTabSheet
+        Caption = ' Opera'#231#245'es de C'#226'mbio   '
+        ImageIndex = 1
+        object Panel9: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 74
+          Width = 1090
+          Height = 292
+          Align = alClient
+          BevelKind = bkFlat
+          BevelOuter = bvNone
+          TabOrder = 0
+          object DBGrid3: TDBGrid
+            Left = 0
+            Top = 0
+            Width = 1086
+            Height = 244
+            Align = alClient
+            BorderStyle = bsNone
+            DataSource = dsOperacoes
+            Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'Tahoma'
+            TitleFont.Style = []
+            OnTitleClick = DBGrid3TitleClick
+          end
+          object Panel11: TPanel
+            AlignWithMargins = True
+            Left = 3
+            Top = 247
+            Width = 1080
+            Height = 38
+            Align = alBottom
+            BevelOuter = bvNone
+            TabOrder = 1
+            object lblTotalValorOriginal: TLabel
+              Left = 498
+              Top = 8
+              Width = 89
+              Height = 13
+              Alignment = taRightJustify
+              AutoSize = False
+              Caption = '0,00'
+            end
+            object lblTotalValorConvertido: TLabel
+              Left = 673
+              Top = 8
+              Width = 89
+              Height = 13
+              Alignment = taRightJustify
+              AutoSize = False
+              Caption = '0,00'
+            end
+            object lblTotalTaxas: TLabel
+              Left = 823
+              Top = 8
+              Width = 89
+              Height = 13
+              Alignment = taRightJustify
+              AutoSize = False
+              Caption = '0,00'
+            end
+            object lblFiltro: TLabel
+              Left = 8
+              Top = 2
+              Width = 201
+              Height = 11
+              Caption = 'Clique no t'#237'tulo da coluna para filtrar informa'#231#245'es'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -9
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              ParentFont = False
+            end
+            object edtPesquisa: TEdit
+              Left = 8
+              Top = 16
+              Width = 219
+              Height = 19
+              CharCase = ecUpperCase
+              TabOrder = 0
+              OnChange = edtPesquisaChange
+            end
+          end
+        end
+        object Panel10: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 1090
+          Height = 65
+          Align = alTop
+          BevelKind = bkFlat
+          BevelOuter = bvNone
+          TabOrder = 1
+          object btnIncluirOp: TButton
+            AlignWithMargins = True
+            Left = 3
+            Top = 3
+            Width = 94
+            Height = 55
+            Align = alLeft
+            Caption = '&Incluir'
+            TabOrder = 0
+            OnClick = btnIncluirOpClick
+          end
+          object btnExcluirOp: TButton
+            AlignWithMargins = True
+            Left = 203
+            Top = 3
+            Width = 94
+            Height = 55
+            Align = alLeft
+            Caption = '&Excluir'
+            TabOrder = 1
+            OnClick = btnExcluirOpClick
+          end
+          object btnAlterarOp: TButton
+            AlignWithMargins = True
+            Left = 103
+            Top = 3
+            Width = 94
+            Height = 55
+            Align = alLeft
+            Caption = '&Alterar'
+            TabOrder = 2
+            OnClick = btnAlterarOpClick
+          end
+          object btnImprimirOp: TButton
+            AlignWithMargins = True
+            Left = 303
+            Top = 3
+            Width = 94
+            Height = 55
+            Align = alLeft
+            Caption = '&Relat'#243'rios'
+            TabOrder = 3
+            OnClick = btnImprimirOpClick
+          end
+        end
+      end
+    end
+  end
+  object dsCotacoes: TDataSource
+    DataSet = qryCotacoes
+    Left = 565
+    Top = 28
+  end
+  object qryCotacoes: TFDQuery
+    Connection = DM.fbConn
+    SQL.Strings = (
+      'select * from cotacoes')
+    Left = 637
+    Top = 28
+    object qryCotacoesID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+      Required = True
+      Visible = False
+    end
+    object qryCotacoesDATA_COTACAO: TDateField
+      Alignment = taCenter
+      DisplayLabel = 'Data Cota'#231#227'o'
+      FieldName = 'DATA_COTACAO'
+      Origin = 'DATA_COTACAO'
+    end
+    object qryCotacoesCODIGO: TSmallintField
+      Alignment = taCenter
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      DisplayFormat = '000'
+    end
+    object qryCotacoesNOME: TStringField
+      DisplayLabel = 'Nome da Moeda'
+      DisplayWidth = 50
+      FieldKind = fkLookup
+      FieldName = 'NOME'
+      LookupDataSet = qryMoedas
+      LookupKeyFields = 'CODIGO'
+      LookupResultField = 'NOME'
+      KeyFields = 'CODIGO'
+      Size = 60
+      Lookup = True
+    end
+    object qryCotacoesSIMBOLO: TStringField
+      Alignment = taCenter
+      DisplayLabel = 'S'#237'mbolo'
+      DisplayWidth = 7
+      FieldKind = fkLookup
+      FieldName = 'SIMBOLO'
+      LookupDataSet = qryMoedas
+      LookupKeyFields = 'CODIGO'
+      LookupResultField = 'SIMBOLO'
+      KeyFields = 'CODIGO'
+      Size = 10
+      Lookup = True
+    end
+    object qryCotacoesTIPO: TStringField
+      Alignment = taCenter
+      DisplayLabel = 'Tipo'
+      DisplayWidth = 4
+      FieldKind = fkLookup
+      FieldName = 'TIPO'
+      LookupDataSet = qryMoedas
+      LookupKeyFields = 'CODIGO'
+      LookupResultField = 'TIPO'
+      KeyFields = 'CODIGO'
+      Size = 1
+      Lookup = True
+    end
+    object qryCotacoesTAXA_COMPRA: TFloatField
+      DisplayLabel = 'Taxa Compra (R$)'
+      DisplayWidth = 15
+      FieldName = 'TAXA_COMPRA'
+      Origin = 'TAXA_COMPRA'
+      DisplayFormat = '0.000000'
+    end
+    object qryCotacoesTAXA_VENDA: TFloatField
+      DisplayLabel = 'Taxa Venda (R$)'
+      DisplayWidth = 15
+      FieldName = 'TAXA_VENDA'
+      Origin = 'TAXA_VENDA'
+      DisplayFormat = '0.000000'
+    end
+    object qryCotacoesPARIDADE_COMPRA: TFloatField
+      DisplayLabel = 'Paridade Compra ($)'
+      DisplayWidth = 15
+      FieldName = 'PARIDADE_COMPRA'
+      Origin = 'PARIDADE_COMPRA'
+      DisplayFormat = '0.000000'
+    end
+    object qryCotacoesPARIDADE_VENDA: TFloatField
+      DisplayLabel = 'Paridade Venda ($)'
+      DisplayWidth = 15
+      FieldName = 'PARIDADE_VENDA'
+      Origin = 'PARIDADE_VENDA'
+      DisplayFormat = '0.000000'
+    end
+  end
+  object qryMoedas: TFDQuery
+    Connection = DM.fbConn
+    SQL.Strings = (
+      'select * from moedas')
+    Left = 477
+    Top = 28
+    object qryMoedasID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+      Required = True
+      Visible = False
+    end
+    object qryMoedasCODIGO: TSmallintField
+      Alignment = taCenter
+      DisplayLabel = 'C'#243'digo'
+      DisplayWidth = 6
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      DisplayFormat = '000'
+    end
+    object qryMoedasNOME: TStringField
+      DisplayLabel = 'Nome da Moeda'
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      Size = 60
+    end
+    object qryMoedasSIMBOLO: TStringField
+      Alignment = taCenter
+      DisplayLabel = 'S'#237'mbolo'
+      DisplayWidth = 7
+      FieldName = 'SIMBOLO'
+      Origin = 'SIMBOLO'
+      Size = 10
+    end
+    object qryMoedasTIPO: TStringField
+      Alignment = taCenter
+      DisplayLabel = 'Tipo'
+      DisplayWidth = 4
+      FieldName = 'TIPO'
+      Origin = 'TIPO'
+      FixedChar = True
+      Size = 1
+    end
+    object qryMoedasCOD_PAIS: TSmallintField
+      Alignment = taCenter
+      DisplayLabel = 'C'#243'digo Pa'#237's'
+      FieldName = 'COD_PAIS'
+      Origin = 'COD_PAIS'
+      DisplayFormat = '000000'
+    end
+    object qryMoedasPAIS: TStringField
+      DisplayLabel = 'Pa'#237's'
+      FieldName = 'PAIS'
+      Origin = 'PAIS'
+      Size = 50
+    end
+  end
+  object dsMoedas: TDataSource
+    DataSet = qryMoedas
+    Left = 413
+    Top = 28
+  end
+  object dsOperacoes: TDataSource
+    DataSet = qryOperacoes
+    Left = 715
+    Top = 27
+  end
+  object qryOperacoes: TFDQuery
+    Connection = DM.fbConn
+    SQL.Strings = (
+      'select * from operacoes')
+    Left = 787
+    Top = 27
+    object qryOperacoesID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      Visible = False
+    end
+    object qryOperacoesDATA_OPERACAO: TDateField
+      Alignment = taCenter
+      DisplayLabel = 'Data Opera'#231#227'o'
+      DisplayWidth = 13
+      FieldName = 'DATA_OPERACAO'
+      Origin = 'DATA_OPERACAO'
+    end
+    object qryOperacoesID_LOJA: TIntegerField
+      Alignment = taCenter
+      DisplayLabel = 'Loja'
+      DisplayWidth = 5
+      FieldName = 'ID_LOJA'
+      Origin = 'ID_LOJA'
+      DisplayFormat = '000'
+    end
+    object qryOperacoesNOMELOJA: TStringField
+      DisplayLabel = 'Cidade'
+      DisplayWidth = 20
+      FieldKind = fkLookup
+      FieldName = 'NOMELOJA'
+      LookupDataSet = qryLojas
+      LookupKeyFields = 'ID'
+      LookupResultField = 'CIDADE'
+      KeyFields = 'ID_LOJA'
+      Size = 40
+      Lookup = True
+    end
+    object qryOperacoesNOME_CLIENTE: TStringField
+      DisplayLabel = 'Nome do Cliente'
+      DisplayWidth = 40
+      FieldName = 'NOME_CLIENTE'
+      Origin = 'NOME_CLIENTE'
+      Size = 60
+    end
+    object qryOperacoesVALOR_ORIGINAL: TFloatField
+      DisplayLabel = 'Valor Original'
+      DisplayWidth = 15
+      FieldName = 'VALOR_ORIGINAL'
+      Origin = 'VALOR_ORIGINAL'
+      DisplayFormat = '#,##0.00'
+    end
+    object qryOperacoesMOEDA_ORIGEM: TStringField
+      Alignment = taCenter
+      DisplayLabel = 'Moeda Origem'
+      DisplayWidth = 12
+      FieldName = 'MOEDA_ORIGEM'
+      Origin = 'MOEDA_ORIGEM'
+      Size = 3
+    end
+    object qryOperacoesVALOR_CONVERTIDO: TFloatField
+      DisplayLabel = 'Valor Convertido'
+      DisplayWidth = 15
+      FieldName = 'VALOR_CONVERTIDO'
+      Origin = 'VALOR_CONVERTIDO'
+      DisplayFormat = '#,##0.00'
+    end
+    object qryOperacoesMOEDA_DESTINO: TStringField
+      Alignment = taCenter
+      DisplayLabel = 'Para'
+      DisplayWidth = 8
+      FieldName = 'MOEDA_DESTINO'
+      Origin = 'MOEDA_DESTINO'
+      Size = 3
+    end
+    object qryOperacoesTAXA_COBRADA: TFloatField
+      DisplayLabel = 'Taxa Cobrada (R$)'
+      DisplayWidth = 15
+      FieldName = 'TAXA_COBRADA'
+      Origin = 'TAXA_COBRADA'
+      DisplayFormat = '#,##0.0000'
+    end
+    object qryOperacoesVALOR_COTACAO: TFloatField
+      DisplayLabel = 'Cota'#231#227'o no Dia (R$)'
+      DisplayWidth = 15
+      FieldName = 'VALOR_COTACAO'
+      Origin = 'VALOR_COTACAO'
+      DisplayFormat = '#,##0.0000'
+    end
+    object qryOperacoesIND_CBBMOEDA: TSmallintField
+      FieldName = 'IND_CBBMOEDA'
+      Origin = 'IND_CBBMOEDA'
+      Visible = False
+    end
+    object qryOperacoesCODIGO_MOEDA_ORIGEM: TSmallintField
+      FieldName = 'CODIGO_MOEDA_ORIGEM'
+      Origin = 'CODIGO_MOEDA_ORIGEM'
+      Visible = False
+    end
+    object qryOperacoesCODIGO_MOEDA_DESTINO: TSmallintField
+      FieldName = 'CODIGO_MOEDA_DESTINO'
+      Origin = 'CODIGO_MOEDA_DESTINO'
+      Visible = False
+    end
+  end
+  object qryTotais: TFDQuery
+    Connection = DM.fbConn
+    SQL.Strings = (
+      
+        'select sum(valor_original) as valorOriginal, sum(valor_convertid' +
+        'o) as valorConvertido, sum(taxa_cobrada) as taxaCobrada'
+      'from operacoes ')
+    Left = 859
+    Top = 27
+    object qryTotaisVALORORIGINAL: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'VALORORIGINAL'
+      Origin = 'VALORORIGINAL'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object qryTotaisVALORCONVERTIDO: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'VALORCONVERTIDO'
+      Origin = 'VALORCONVERTIDO'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object qryTotaisTAXACOBRADA: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'TAXACOBRADA'
+      Origin = 'TAXACOBRADA'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+  end
+  object qryLojas: TFDQuery
+    Connection = DM.fbConn
+    SQL.Strings = (
+      'select * from lojas order by id')
+    Left = 595
+    Top = 91
+    object qryLojasID: TIntegerField
+      Alignment = taCenter
+      DisplayLabel = 'Loja'
+      DisplayWidth = 5
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      DisplayFormat = '000'
+    end
+    object qryLojasNOME: TStringField
+      DisplayLabel = 'Nome'
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      Size = 40
+    end
+    object qryLojasCIDADE: TStringField
+      DisplayLabel = 'Cidade'
+      FieldName = 'CIDADE'
+      Origin = 'CIDADE'
+      Size = 40
+    end
+    object qryLojasUF: TStringField
+      DisplayWidth = 3
+      FieldName = 'UF'
+      Origin = 'UF'
+      FixedChar = True
+      Size = 2
+    end
+  end
+  object dsLojas: TDataSource
+    DataSet = qryLojas
+    Left = 544
+    Top = 96
+  end
+end

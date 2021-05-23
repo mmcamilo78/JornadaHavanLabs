@@ -1,0 +1,25 @@
+unit uOperacoesLoja;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, RLReport;
+
+type
+  Trel_OperacoesLoja = class(TForm)
+    relOperacoesLoja: TRLReport;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  rel_OperacoesLoja: Trel_OperacoesLoja;
+
+implementation
+
+{$R *.dfm}
+
+end.

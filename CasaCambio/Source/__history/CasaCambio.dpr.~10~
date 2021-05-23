@@ -1,0 +1,25 @@
+program CasaCambio;
+
+uses
+  Vcl.Forms,
+  uPrincipal in 'uPrincipal.pas' {frmPrincipal},
+  uMoedasIncAlt in 'uMoedasIncAlt.pas' {frmMoedasIncAlt},
+  uDm in 'uDm.pas' {DM: TDataModule},
+  uImporta in 'uImporta.pas' {frmImporta},
+  uCotacaoIncAlt in 'uCotacaoIncAlt.pas' {frmCotacaoIncAlt},
+  uLocalizaMoedas in 'uLocalizaMoedas.pas' {frmLocalizaMoedas},
+  calculadora in 'calculadora.pas' {frmCalculadora},
+  uOperacoesIncAlt in 'uOperacoesIncAlt.pas' {frmOperacoesIncAlt},
+  Vcl.Themes,
+  Vcl.Styles;
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Windows10');
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TDM, DM);
+  Application.Run;
+end.
