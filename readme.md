@@ -70,7 +70,9 @@ Com base no escopo proposto, como tela principal onde fiz a divisão em seis par
 - Também possui um CRUD básico, porém na inclusão de uma nova operação, não foi solicitado um campo tipo `chave única` do cliente, a fim de evitar duplicidade no cadastro do mesmo cliente com as variações do seu próprio nome por exemplo, então na implementação do código, ao começar a digitar o nome do cliente, um mini grid será exibido trazendo os nomes já cadastrados, e caso o nome já tenha sido informado anteriormente, o usuário poderá selecioná-lo, não é a solução ideal mas já irá ajudar na questão de variações com o mesmo nome de um mesmo cliente.
 - Conforme informado no case o ***O Problema***, considerei nas operações a `Taxa 10%` sobre o valor convertido que a empresa cobraria pela operação.
  
-### Relatórios
+### Relatórios  
+Para construção dos relatórios utilizei o Fortes Report CE que pode ser baixado através dos seguintes repositórios:  
+[Fortes SVN](https://github.com/fortesinformatica/fortesreport-ce/trunk) ou [Fortes Git](https://github.com/fortesinformatica/fortesreport-ce.git)   
 
 Conforme o escopo os ***Relatórios poderão ser filtrados por intervalo de tempo e cliente***  
 :radio_button: Todos os Registros  
