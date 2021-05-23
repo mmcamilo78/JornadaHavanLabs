@@ -17,8 +17,10 @@ Candidato > Márcio Moreira Camilo
 ```
 \CasaCambio   <- Pasta Default do projeto CasaCambio - Muito Dinheiro e do arquivo .exe do programa 
 \Arquivos     <- Pasta de retorno dos arquivos .CSV do Banco Central do Brasil com as cotações das moedas 
-\BD           <- Pasta que contém o arquivo de Banco de Dados DADOS.FDB 
+\BD           <- Pasta que contém o arquivo de Banco de Dados DADOS.FDB e os scripts SQL
+\Help         <- Pasta com arquivo de ajuda ao usuário
 \Img          <- Pasta que contém as imagens utilizadas no programa
+\Install      <- Pasta que contém o instalador do programa para realização de testes em caso de não possuir o RadStudio para compilar o programa
 \Source       <- Pasta com os Códigos Fonte do programa
 .\Win32       <- Pasta de Versão de Compilação da Plataforma
 .\Win32\Debug <- Pasta de Arquivos .DCU 
@@ -28,7 +30,7 @@ Candidato > Márcio Moreira Camilo
 ### Configurações
 - Instalar o SGBD caso ainda não exista no computador destino, instalação padrão sem seleções específicas. Basicamente Next, Next, Fim.
 
-- Se a estrutura permanecer a mesma acima, o programa pode ser compilado/executado, caso contrário, existe um arquivo `conexao.ini` na pasta `\CasaCambio` onde poderá ser feito o redirecionamento do IP/Destino do arquivo `DADOS.FDB` para o novo local onde se encontra.
+- Se a estrutura permanecer a mesma acima, o programa será compilado/executado normalmente. O arquivo `conexao.ini` será criado na pasta `\CasaCambio` onde será feito o redirecionamento do IP/Destino do arquivo `DADOS.FDB`, normalmente na subpasta \BD no mesmo caminho que contém o .exe se. Se necessário, editar o arquivo, informando o local onde o Banco de Dados `DADOS.FDB` se encontra. 
 
 ### Programa
 Com base no escopo proposto, como tela principal onde fiz a divisão em seis partes sendo:
